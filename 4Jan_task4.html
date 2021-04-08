@@ -1,0 +1,33 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <select id="dish" onchange="f1()">
+            
+            <option value="BN">Butter Naan</option>
+            <option value="PBM">Paneer Butter Masala</option>
+            <option value="tikka">Paneer Tikka</option>
+            <option value="idly">idly</option>
+            <option value="wada">wada</option>
+        </select>
+        <h1 id="DishInfo"></h1>
+        <script>
+            f1();
+            function f1(){
+           var dish= document.getElementById("dish").value;
+
+           switch(dish){
+               case "BN":document.getElementById("DishInfo").innerHTML="Price is 300 per plate, from swagath"; break;
+               case "PBM":document.getElementById("DishInfo").innerHTML="Price is 30 per plate, from geeta"; break;
+               case "tikka":document.getElementById("DishInfo").innerHTML="Price is 150 per plate, from preetham"; break;
+               case "idly":document.getElementById("DishInfo").innerHTML="Price is 250 per plate, from pranathi"; break;
+               case "wada":document.getElementById("DishInfo").innerHTML="Price is 100 per plate, from thukaram"; break;
+
+           }
+        }
+
+
+        </script>
+    </body>
+</html>

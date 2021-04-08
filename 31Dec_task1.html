@@ -1,0 +1,37 @@
+<html>
+
+<head>
+
+
+</head>
+
+<body>
+
+    <form>
+        <label>Username or Mobile Number:  </label> <input type="text" id="Username"><br><br>
+        <label>Password:  </label> <input type="text" id="Password"><br><br>
+        <button onclick="f1()">Submit</button>
+    </form>
+
+    <script>
+        function f1(){
+            event.preventDefault();
+
+            var username=document.getElementById("Username").value;
+            var password=document.getElementById("Password").value;
+
+            /*using Ternary Operator /*
+
+           /* var usernamecheck=username == "Preetham" ? true: false;
+            var passwordcheck= password == "Pranathi" ? true: false; 
+
+                usernamecheck == passwordcheck ? alert("login success"): alert("login failed"); */
+
+            /*Using Logical AND Operator */
+                (username == "Preetham" || username == "9010101010") && password == "pranathi" ? alert("loginn Success"): alert("Login failed");
+            
+
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<html>
+
+<head>
+
+
+</head>
+
+
+<body>
+    <form>
+    <label>1st number:  </label><input type="text" id=Number1><br><br>
+    <label>2nd Number:  </label><input type="text" id=Number2><br><br>
+    <button onclick="mul()">Multiply</button>
+    <button onclick="sub()">Subtract</button>
+    </form>
+    <script>
+        function mul(){
+            var a=document.getElementById("Number1").value;
+            var b=document.getElementById("Number2").value;
+            document.write(a*b);
+
+        }
+        function sub(){
+            var a=document.getElementById("Number1").value;
+            var b=document.getElementById("Number2").value;
+            document.write(a-b);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <form>
+            <label>Username  :</label><input type="text" id=username><br><br>
+            <label>Password  :</label><input type="password" id=password><br><br>
+            <button onclick="login()">Submit</button>
+        </form>
+
+        <script>
+            function login(){
+                event.preventDefault();
+                var uname=document.getElementById("username").value;
+                var pw=document.getElementById("password").value;
+                if(uname == "preetham" && pw == "pranathi"){
+                    alert("Login success")
+                }
+                else{
+                    alert("Failed login attempt")
+                }
+            }
+
+            </script>
+    </body>
+</html>

@@ -1,0 +1,39 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+<form>
+    
+
+    <label>Password</label><input type="password" id="password"><br>
+    <button onclick="f1()">Submit</button>
+    
+
+</form>
+
+<script>
+
+    
+    function f1(){
+
+        var password=document.getElementById("password").value;
+        if(password.length <5)
+        {
+            alert("PW should atleast be 5");
+        }
+        else{
+            alert("Success");
+        }
+
+
+    }
+</script>
+
+</body>
+
+
+    </html>

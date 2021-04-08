@@ -1,0 +1,26 @@
+<html>
+    <head>
+
+
+    </head>
+
+    <body>
+
+        <form>
+
+            <label>Username:  </label><input type="text" id=username><br><br>
+            <label>Password:  </label><input type="password" id=password><br><br>
+            <button onclick="f1()">Submit</button>
+        </form>
+
+        <script>
+            function f1(){
+                event.preventDefault();
+                var username=document.getElementById("username").value;
+                var password=document.getElementById("password").value;
+                (username != "Preetham" || username != "9010101010") ? alert("loginn Success"): alert("Wrong Username");
+                password != "pranathi" ? alert("Password OK"): alert("Wrong password");
+            }
+        </script>
+    </body>
+</html>
